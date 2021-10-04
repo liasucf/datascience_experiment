@@ -1,0 +1,125 @@
+{
+    "columns": [
+        "lib_mrq",
+        "lib_mod_doss",
+        "lib_mod",
+        "dscom",
+        "cnit",
+        "tvv",
+        "cod_cbr",
+        "hybride",
+        "puiss_admin_98",
+        "puiss_max",
+        "typ_boite_nb_rapp",
+        "conso_urb",
+        "conso_exurb",
+        "conso_mixte",
+        "co_typ_1",
+        "nox",
+        "ptcl",
+        "masse_ordma_min",
+        "masse_ordma_max",
+        "champ_v9",
+        "Carrosserie",
+        "gamme"
+    ],
+    "rows": 41257,
+    "cols": 22,
+    "target_is_numeric": true,
+    "columns_info": {
+        "lib_mrq": [
+            "categorical",
+            "many_categories"
+        ],
+        "lib_mod_doss": [
+            "categorical",
+            "many_categories"
+        ],
+        "lib_mod": [
+            "categorical",
+            "many_categories"
+        ],
+        "dscom": [
+            "categorical",
+            "many_categories"
+        ],
+        "cnit": [
+            "text_transform"
+        ],
+        "tvv": [
+            "text_transform"
+        ],
+        "cod_cbr": [
+            "categorical",
+            "few_categories"
+        ],
+        "hybride": [
+            "categorical",
+            "few_categories"
+        ],
+        "puiss_admin_98": [
+            "scale"
+        ],
+        "puiss_max": [
+            "categorical",
+            "many_categories"
+        ],
+        "typ_boite_nb_rapp": [
+            "categorical",
+            "few_categories"
+        ],
+        "conso_urb": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "conso_exurb": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "conso_mixte": [
+            "categorical",
+            "many_categories"
+        ],
+        "co_typ_1": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "nox": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "ptcl": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "masse_ordma_min": [
+            "scale"
+        ],
+        "masse_ordma_max": [
+            "scale"
+        ],
+        "champ_v9": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "Carrosserie": [
+            "categorical",
+            "few_categories"
+        ],
+        "gamme": [
+            "categorical",
+            "few_categories"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 22,
+    "is_sample_weighted": false
+}

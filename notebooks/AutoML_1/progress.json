@@ -1,0 +1,580 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 300,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Baseline",
+            "Decision Tree",
+            "Random Forest",
+            "Xgboost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 8.50628137588501
+            },
+            {
+                "model_name": "1_Baseline",
+                "model_type": "Baseline",
+                "fit_level": "simple_algorithms",
+                "train_time": 0.303189754486084
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 15.557449579238892
+            },
+            {
+                "model_name": "3_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 67.39499998092651
+            },
+            {
+                "model_name": "4_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 12.741968870162964
+            },
+            {
+                "model_name": "5_Default_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "default_algorithms",
+                "train_time": 20.887213468551636
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 0.2293870449066162
+            }
+        ],
+        "is_hill_climbing": false,
+        "is_stacking": false
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Baseline",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 43,
+                    "explain_level": 2
+                },
+                "automl_random_state": 42,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "1_Baseline",
+                "status": "trained",
+                "final_loss": 34.03377401807667,
+                "train_time": 0.48669981956481934,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "lib_mrq": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod_doss": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod": [
+                            "categorical_to_int"
+                        ],
+                        "dscom": [
+                            "categorical_to_int"
+                        ],
+                        "cnit": [
+                            "text_transform"
+                        ],
+                        "tvv": [
+                            "text_transform"
+                        ],
+                        "cod_cbr": [
+                            "categorical_to_int"
+                        ],
+                        "hybride": [
+                            "categorical_to_int"
+                        ],
+                        "puiss_max": [
+                            "categorical_to_int"
+                        ],
+                        "typ_boite_nb_rapp": [
+                            "categorical_to_int"
+                        ],
+                        "conso_urb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_exurb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_mixte": [
+                            "categorical_to_int"
+                        ],
+                        "co_typ_1": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "nox": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "ptcl": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "champ_v9": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "Carrosserie": [
+                            "categorical_to_int"
+                        ],
+                        "gamme": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 43,
+                    "criterion": "friedman_mse",
+                    "max_depth": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 42,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 6.5130544487376065,
+                "train_time": 16.0860378742218,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "lib_mrq": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod_doss": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod": [
+                            "categorical_to_int"
+                        ],
+                        "dscom": [
+                            "categorical_to_int"
+                        ],
+                        "cnit": [
+                            "text_transform"
+                        ],
+                        "tvv": [
+                            "text_transform"
+                        ],
+                        "cod_cbr": [
+                            "categorical_to_int"
+                        ],
+                        "hybride": [
+                            "categorical_to_int"
+                        ],
+                        "puiss_max": [
+                            "categorical_to_int"
+                        ],
+                        "typ_boite_nb_rapp": [
+                            "categorical_to_int"
+                        ],
+                        "conso_urb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_exurb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_mixte": [
+                            "categorical_to_int"
+                        ],
+                        "co_typ_1": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "nox": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "ptcl": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "champ_v9": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "Carrosserie": [
+                            "categorical_to_int"
+                        ],
+                        "gamme": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "reg:squarederror",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 3,
+                    "eval_metric": "rmse",
+                    "explain_level": 2
+                },
+                "automl_random_state": 42,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "3_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 1.0293474100415982,
+                "train_time": 68.0243194103241,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "lib_mrq": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lib_mod_doss": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lib_mod": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "dscom": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "cnit": [
+                            "text_transform"
+                        ],
+                        "tvv": [
+                            "text_transform"
+                        ],
+                        "cod_cbr": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "hybride": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "puiss_admin_98": [
+                            "scale_normal"
+                        ],
+                        "puiss_max": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "typ_boite_nb_rapp": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "conso_urb": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "conso_exurb": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "conso_mixte": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "co_typ_1": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "nox": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "ptcl": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "masse_ordma_min": [
+                            "scale_normal"
+                        ],
+                        "masse_ordma_max": [
+                            "scale_normal"
+                        ],
+                        "champ_v9": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Carrosserie": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "gamme": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 42,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "4_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 10.161166410296577,
+                "train_time": 13.190770626068115,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "lib_mrq": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod_doss": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod": [
+                            "categorical_to_int"
+                        ],
+                        "dscom": [
+                            "categorical_to_int"
+                        ],
+                        "cnit": [
+                            "text_transform"
+                        ],
+                        "tvv": [
+                            "text_transform"
+                        ],
+                        "cod_cbr": [
+                            "categorical_to_int"
+                        ],
+                        "hybride": [
+                            "categorical_to_int"
+                        ],
+                        "puiss_max": [
+                            "categorical_to_int"
+                        ],
+                        "typ_boite_nb_rapp": [
+                            "categorical_to_int"
+                        ],
+                        "conso_urb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_exurb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_mixte": [
+                            "categorical_to_int"
+                        ],
+                        "co_typ_1": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "nox": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "ptcl": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "champ_v9": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "Carrosserie": [
+                            "categorical_to_int"
+                        ],
+                        "gamme": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "criterion": "mse",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 5,
+                    "eval_metric_name": "rmse",
+                    "explain_level": 2
+                },
+                "automl_random_state": 42,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "5_Default_RandomForest",
+                "status": "trained",
+                "final_loss": 5.56839620592464,
+                "train_time": 21.543460845947266,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 1.0293473661404162,
+                "train_time": 0.2293870449066162
+            }
+        ]
+    },
+    "adjust_validation": false
+}

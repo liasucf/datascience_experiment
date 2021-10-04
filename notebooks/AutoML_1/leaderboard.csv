@@ -1,0 +1,7 @@
+name,model_type,metric_type,metric_value,train_time
+1_Baseline,Baseline,rmse,34.03377401807667,0.49
+2_DecisionTree,Decision Tree,rmse,6.5130544487376065,16.09
+3_Default_Xgboost,Xgboost,rmse,1.0293474100415982,68.02
+4_Default_NeuralNetwork,Neural Network,rmse,10.161166410296577,13.19
+5_Default_RandomForest,Random Forest,rmse,5.56839620592464,21.54
+Ensemble,Ensemble,rmse,1.0293473661404162,0.23

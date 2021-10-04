@@ -1,0 +1,152 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 300,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Decision Tree"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 24.34013605117798
+            },
+            {
+                "model_name": "1_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 26.15356755256653
+            }
+        ],
+        "is_hill_climbing": false,
+        "is_stacking": false
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "lib_mrq": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod_doss": [
+                            "categorical_to_int"
+                        ],
+                        "lib_mod": [
+                            "categorical_to_int"
+                        ],
+                        "dscom": [
+                            "categorical_to_int"
+                        ],
+                        "cnit": [
+                            "text_transform"
+                        ],
+                        "tvv": [
+                            "text_transform"
+                        ],
+                        "cod_cbr": [
+                            "categorical_to_int"
+                        ],
+                        "hybride": [
+                            "categorical_to_int"
+                        ],
+                        "puiss_max": [
+                            "categorical_to_int"
+                        ],
+                        "typ_boite_nb_rapp": [
+                            "categorical_to_int"
+                        ],
+                        "conso_urb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_exurb": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "conso_mixte": [
+                            "categorical_to_int"
+                        ],
+                        "co_typ_1": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "nox": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "ptcl": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "champ_v9": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "Carrosserie": [
+                            "categorical_to_int"
+                        ],
+                        "gamme": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_9\\X.data",
+                    "y_path": "AutoML_9\\y.data",
+                    "results_path": "AutoML_9"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 43,
+                    "criterion": "friedman_mse",
+                    "max_depth": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 42,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "1_DecisionTree",
+                "status": "trained",
+                "final_loss": 6.5130544487376065,
+                "train_time": 28.325168132781982,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "skipped",
+                "final_loss": 6.5130544487376065,
+                "train_time": 28.325168132781982
+            }
+        ]
+    },
+    "adjust_validation": false
+}

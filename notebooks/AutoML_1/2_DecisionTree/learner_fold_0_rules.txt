@@ -1,0 +1,32 @@
+if (conso_exurb > 49.5) and (conso_exurb <= 66.5) and (conso_mixte > 110.5) and (conso_mixte <= 115.5) then response: 212.137 | based on 8,996 samples
+
+if (conso_exurb > 49.5) and (conso_exurb <= 66.5) and (conso_mixte <= 110.5) and (conso_mixte > 105.5) then response: 199.281 | based on 7,438 samples
+
+if (conso_exurb > 49.5) and (conso_exurb <= 66.5) and (conso_mixte > 110.5) and (conso_mixte > 115.5) then response: 226.941 | based on 4,523 samples
+
+if (conso_exurb > 49.5) and (conso_exurb <= 66.5) and (conso_mixte <= 110.5) and (conso_mixte <= 105.5) then response: 188.612 | based on 4,077 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb > 16.5) and (conso_exurb > 35.5) and (conso_exurb <= 43.5) then response: 145.491 | based on 1,278 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb > 16.5) and (conso_exurb <= 35.5) and (conso_mixte > 77.5) then response: 127.289 | based on 1,265 samples
+
+if (conso_exurb > 49.5) and (conso_exurb > 66.5) and (conso_exurb > 73.5) and (conso_urb <= 79.5) then response: 278.781 | based on 904 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb > 16.5) and (conso_exurb <= 35.5) and (conso_mixte <= 77.5) then response: 107.182 | based on 824 samples
+
+if (conso_exurb > 49.5) and (conso_exurb > 66.5) and (conso_exurb <= 73.5) and (conso_urb <= 56.5) then response: 241.164 | based on 694 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb > 16.5) and (conso_exurb > 35.5) and (conso_exurb > 43.5) then response: 166.454 | based on 674 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb <= 16.5) and (conso_urb <= 99.5) and (cod_cbr <= 4.0) then response: 313.432 | based on 95 samples
+
+if (conso_exurb > 49.5) and (conso_exurb > 66.5) and (conso_exurb <= 73.5) and (conso_urb > 56.5) then response: 268.333 | based on 57 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb <= 16.5) and (conso_urb > 99.5) and (puiss_admin_98 <= 77.0) then response: 368.216 | based on 51 samples
+
+if (conso_exurb > 49.5) and (conso_exurb > 66.5) and (conso_exurb > 73.5) and (conso_urb > 79.5) then response: 316.184 | based on 49 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb <= 16.5) and (conso_urb <= 99.5) and (cod_cbr > 4.0) then response: 238.067 | based on 15 samples
+
+if (conso_exurb <= 49.5) and (conso_exurb <= 16.5) and (conso_urb > 99.5) and (puiss_admin_98 > 77.0) then response: 563.5 | based on 2 samples
+
